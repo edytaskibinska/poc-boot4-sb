@@ -7,6 +7,6 @@ import './styles'
 const ROOT = document.querySelector(".container");
 
 ReactDOM.render(
-    <App/>,
-    ROOT
-  );
+  <App />,
+  ROOT
+);

@@ -1,16 +1,16 @@
-import React, {FC} from 'react'
+import React, { FC } from 'react'
 import "./style.scss"
 
 interface TitleInterface {
-    text: string;
+  text: string;
 
-  }
-  
-const Title: FC<TitleInterface> = ({text}) => {
+}
+
+const Title: FC<TitleInterface> = ({ text }) => {
   return (
-      <h1>
-          {text}
-      </h1>
+    <h1>
+      {text}
+    </h1>
   );
 };
 export default Title
