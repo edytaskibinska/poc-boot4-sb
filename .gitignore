@@ -5,3 +5,6 @@
 
 # cache files
 /.cache
+
+# distribution files
+/dist
