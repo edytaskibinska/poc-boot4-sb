@@ -1,9 +1,12 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
+import { App } from './components/App'
+import './styles'
 
-const ROOT= document.querySelector(".container");
+
+const ROOT = document.querySelector(".container");
 
 ReactDOM.render(
-    <h1>Hello world</h1>,
-   ROOT
+    <App/>,
+    ROOT
   );
