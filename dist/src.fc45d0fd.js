@@ -28285,50 +28285,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"src/components/Title.tsx":[function(require,module,exports) {
-"use strict";
-
-var __importDefault = this && this.__importDefault || function (mod) {
-  return mod && mod.__esModule ? mod : {
-    "default": mod
-  };
-};
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Title = void 0;
-
-var react_1 = __importDefault(require("react"));
-
-exports.Title = function (_a) {
-  var text = _a.text;
-  return react_1.default.createElement("h1", null, text);
-};
-},{"react":"node_modules/react/index.js"}],"src/components/App.tsx":[function(require,module,exports) {
-"use strict";
-
-var __importDefault = this && this.__importDefault || function (mod) {
-  return mod && mod.__esModule ? mod : {
-    "default": mod
-  };
-};
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.App = void 0;
-
-var react_1 = __importDefault(require("react"));
-
-var Title_1 = require("./Title");
-
-exports.App = function () {
-  return react_1.default.createElement(Title_1.Title, {
-    text: "Welcome in ts project"
-  });
-};
-},{"react":"node_modules/react/index.js","./Title":"src/components/Title.tsx"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28395,7 +28352,129 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/index.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/components/Title/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/Title/index.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+require("./style.scss");
+
+var Title = function Title(_a) {
+  var text = _a.text;
+  return react_1.default.createElement("h1", null, text);
+};
+
+exports.default = Title;
+},{"react":"node_modules/react/index.js","./style.scss":"src/components/Title/style.scss"}],"src/components/Card/style.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/Card/index.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+require("./style.scss");
+
+var Card = function Card(_a) {
+  var title = _a.title,
+      description = _a.description,
+      date = _a.date;
+  return react_1.default.createElement("div", {
+    className: "card"
+  }, react_1.default.createElement("h2", null, title), react_1.default.createElement("p", null, description), react_1.default.createElement("sub", null, date));
+};
+
+exports.default = Card;
+},{"react":"node_modules/react/index.js","./style.scss":"src/components/Card/style.scss"}],"src/mocks/data.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var data = {
+  products: [{
+    id: 1,
+    title: "Card 1",
+    description: "Lorem ipsum dolor sit amet ..",
+    date: "12/02/2020"
+  }, {
+    id: 2,
+    title: "Card 2",
+    description: "Lorem ipsum dolor sit amet ..",
+    date: "17/05/2020"
+  }, {
+    id: 3,
+    title: "Card 3",
+    description: "Lorem ipsum dolor sit amet ..",
+    date: "10/06/2020"
+  }]
+};
+var _default = data;
+exports.default = _default;
+},{}],"src/components/App.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.App = void 0;
+
+var react_1 = __importDefault(require("react"));
+
+var Title_1 = __importDefault(require("./Title"));
+
+var Card_1 = __importDefault(require("./Card"));
+
+var data_js_1 = __importDefault(require("../mocks/data.js"));
+
+exports.App = function () {
+  var products = data_js_1.default.products;
+  return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement(Title_1.default, {
+    text: "Welcome in ts project"
+  }), products.map(function (card) {
+    return react_1.default.createElement(Card_1.default, {
+      key: card.id,
+      title: card.title,
+      description: card.description,
+      date: card.date
+    });
+  }));
+};
+},{"react":"node_modules/react/index.js","./Title":"src/components/Title/index.tsx","./Card":"src/components/Card/index.tsx","../mocks/data.js":"src/mocks/data.js"}],"src/styles/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -28479,7 +28558,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64568" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64696" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

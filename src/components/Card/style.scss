@@ -1,0 +1,19 @@
+@import "../../styles/variables/";
+
+
+.card {
+    background-color: $white;
+    border: 1px solid $gray-500;
+    padding: 20px;
+    margin: 20px;
+    h2 {
+        color: $pink
+    }
+    p {
+        color: $gray-900
+    }
+    sub {
+        text-align: right;
+        color: $gray-700;
+    }
+}
