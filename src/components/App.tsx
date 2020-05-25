@@ -3,7 +3,7 @@ import React from 'react'
 import Title from "./Title"
 import Card , { CardInterface } from "./Card"
 
-import data from "../mocks/data.js"
+import data from "../mocks/data"
 
 
 
