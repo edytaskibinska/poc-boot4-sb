@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html -p 3000",
-    "build": "parcel build index.html --no-cache"
+    "build": "parcel build index.html --no-cache",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -24,8 +26,14 @@
     "typescript": "^3.9.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
     "node-sass": "^4.14.1",
     "parcel-bundler": "^1.12.4"
   }

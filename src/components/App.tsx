@@ -9,7 +9,7 @@ export const App = () => {
   const { products } = data
   return (
     <>
-      <Title text="Welcome in ts project"></Title>
+      <Title text="Welcome in ts project" />
       {products.map((card: CardInterface) => {
         return (
           <Card key={card.id} title={card.title} description={card.description} date={card.date} />
