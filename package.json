@@ -1,0 +1,30 @@
+{
+  "name": "poc-boot4-sb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EditApp/poc-boot4-sb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EditApp/poc-boot4-sb/issues"
+  },
+  "homepage": "https://github.com/EditApp/poc-boot4-sb#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "parcel-bundler": "^1.12.4"
+  }
+}
