@@ -1,9 +1,9 @@
 import React from 'react'
 
-import Title from "./Title"
-import Card, { CardInterface } from "./Card"
+import Title from "./components/Title"
+import Card, { CardInterface } from "./components/Card"
 
-import data from "../data"
+import data from "./data"
 
 export const App = () => {
   const { products } = data
