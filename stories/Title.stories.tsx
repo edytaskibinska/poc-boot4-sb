@@ -9,4 +9,4 @@ export default {
 };
 
 
-export const Default = () =>  <Title text="Welcome in ts project" />
+export const Default = () =>  <h1>Test</h1>
