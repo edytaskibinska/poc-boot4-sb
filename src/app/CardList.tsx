@@ -1,11 +1,11 @@
 import React from 'react'
 
-import Title from "./components/Title"
-import Card, { CardInterface } from "./components/Card"
+import Title from "../app/shared/Title"
+import Card, { CardInterface } from "./Card/Card"
 
-import data from "./data"
+import data from "../data"
 
-export const App = () => {
+export const CardList = () => {
   const { products } = data
   return (
     <>

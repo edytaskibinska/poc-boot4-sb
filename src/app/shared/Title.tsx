@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import "./style.scss"
+import "./titleStyle.scss"
 
 interface TitleInterface {
   text: string;

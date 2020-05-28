@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html -p 3000",
-    "build": "parcel build index.html --no-cache"
+    "start": "parcel index.html --out-dir build/output -p 3000",
+    "build": "parcel build index.html --out-dir build/production --no-cache"
   },
   "repository": {
     "type": "git",
