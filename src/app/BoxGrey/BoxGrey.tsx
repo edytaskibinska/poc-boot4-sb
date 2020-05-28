@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react'
-import "./BoxGreyStyle.scss"
+import "./boxGreyStyle.scss"
 
 
 

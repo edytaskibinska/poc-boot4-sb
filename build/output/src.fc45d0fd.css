@@ -1,25 +1,28 @@
 h1 {
-  color: #e83e8c; }
+  color: pink; }
 
-.card {
-  background-color: #fff;
-  border: 1px solid #adb5bd;
+.subtitle {
+  color: pink; }
+
+.description {
+  color: grey; }
+
+.date {
+  text-align: right;
+  color: teal; }
+
+.box-grey {
   padding: 20px;
-  margin: 20px; }
-  .card h2 {
-    color: #e83e8c; }
-  .card p {
-    color: #212529; }
-  .card sub {
-    text-align: right;
-    color: #495057; }
+  margin: 20px;
+  border-radius: 5px;
+  background-color: grey; }
 
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1.1rem;
   line-height: 1.3rem;
-  color: #fff;
-  background-color: #6610f2; }
+  color: white;
+  background-color: indigo; }
 
 
 /*# sourceMappingURL=/src.fc45d0fd.css.map */

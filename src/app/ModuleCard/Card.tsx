@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 
-import Subtitle from '../shared/Subtitle'
-import Description from '../shared/Description'
-import Date from '../shared/Date'
-import BoxGrey from '../shared/BoxGrey'
+import Subtitle from '../Subtitle/Subtitle'
+import Description from '../Description/Description'
+import Date from '../Date/Date'
+import BoxGrey from '../BoxGrey/BoxGrey'
 
 
 

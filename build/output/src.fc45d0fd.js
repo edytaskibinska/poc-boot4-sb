@@ -28352,12 +28352,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/components/Title/style.scss":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/app/Title/titleStyle.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/Title/index.tsx":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/Title/Title.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -28372,7 +28372,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var react_1 = __importDefault(require("react"));
 
-require("./style.scss");
+require("./titleStyle.scss");
 
 var Title = function Title(_a) {
   var text = _a.text;
@@ -28380,12 +28380,12 @@ var Title = function Title(_a) {
 };
 
 exports.default = Title;
-},{"react":"node_modules/react/index.js","./style.scss":"src/components/Title/style.scss"}],"src/components/Card/style.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./titleStyle.scss":"src/app/Title/titleStyle.scss"}],"src/app/Subtitle/subtitleStyle.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/components/Card/index.tsx":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/Subtitle/Subtitle.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -28400,19 +28400,142 @@ Object.defineProperty(exports, "__esModule", {
 
 var react_1 = __importDefault(require("react"));
 
-require("./style.scss");
+require("./subtitleStyle.scss");
+
+var SubTitle = function SubTitle(_a) {
+  var text = _a.text;
+  return react_1.default.createElement("h2", {
+    className: "subtitle"
+  }, text);
+};
+
+exports.default = SubTitle;
+},{"react":"node_modules/react/index.js","./subtitleStyle.scss":"src/app/Subtitle/subtitleStyle.scss"}],"src/app/Description/descriptionStyle.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/Description/Description.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+require("./descriptionStyle.scss");
+
+var Description = function Description(_a) {
+  var text = _a.text;
+  return react_1.default.createElement("p", {
+    className: "description"
+  }, text);
+};
+
+exports.default = Description;
+},{"react":"node_modules/react/index.js","./descriptionStyle.scss":"src/app/Description/descriptionStyle.scss"}],"src/app/Date/dateStyle.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/Date/Date.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+require("./dateStyle.scss");
+
+var Date = function Date(_a) {
+  var date = _a.date;
+  return react_1.default.createElement("sub", null, date);
+};
+
+exports.default = Date;
+},{"react":"node_modules/react/index.js","./dateStyle.scss":"src/app/Date/dateStyle.scss"}],"src/app/BoxGrey/boxGreyStyle.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/BoxGrey/BoxGrey.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+require("./boxGreyStyle.scss");
+
+var BoxGrey = function BoxGrey(_a) {
+  var children = _a.children;
+  return react_1.default.createElement("div", {
+    className: "box-grey"
+  }, children);
+};
+
+exports.default = BoxGrey;
+},{"react":"node_modules/react/index.js","./boxGreyStyle.scss":"src/app/BoxGrey/boxGreyStyle.scss"}],"src/app/ModuleCard/Card.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+var Subtitle_1 = __importDefault(require("../Subtitle/Subtitle"));
+
+var Description_1 = __importDefault(require("../Description/Description"));
+
+var Date_1 = __importDefault(require("../Date/Date"));
+
+var BoxGrey_1 = __importDefault(require("../BoxGrey/BoxGrey"));
 
 var Card = function Card(_a) {
   var title = _a.title,
       description = _a.description,
       date = _a.date;
-  return react_1.default.createElement("div", {
-    className: "card"
-  }, react_1.default.createElement("h2", null, title), react_1.default.createElement("p", null, description), react_1.default.createElement("sub", null, date));
+  return react_1.default.createElement(BoxGrey_1.default, null, react_1.default.createElement(Subtitle_1.default, {
+    text: title
+  }), react_1.default.createElement(Description_1.default, {
+    text: description
+  }), react_1.default.createElement(Date_1.default, {
+    date: date
+  }));
 };
 
 exports.default = Card;
-},{"react":"node_modules/react/index.js","./style.scss":"src/components/Card/style.scss"}],"src/data/index.tsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Subtitle/Subtitle":"src/app/Subtitle/Subtitle.tsx","../Description/Description":"src/app/Description/Description.tsx","../Date/Date":"src/app/Date/Date.tsx","../BoxGrey/BoxGrey":"src/app/BoxGrey/BoxGrey.tsx"}],"src/data/index.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28437,7 +28560,7 @@ var data = {
   }]
 };
 exports.default = data;
-},{}],"src/App.tsx":[function(require,module,exports) {
+},{}],"src/containers/CardList.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -28449,17 +28572,17 @@ var __importDefault = this && this.__importDefault || function (mod) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.App = void 0;
+exports.CardList = void 0;
 
 var react_1 = __importDefault(require("react"));
 
-var Title_1 = __importDefault(require("./components/Title"));
+var Title_1 = __importDefault(require("../app/Title/Title"));
 
-var Card_1 = __importDefault(require("./components/Card"));
+var Card_1 = __importDefault(require("../app/ModuleCard/Card"));
 
-var data_1 = __importDefault(require("./data"));
+var data_1 = __importDefault(require("../data"));
 
-exports.App = function () {
+exports.CardList = function () {
   var products = data_1.default.products;
   return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement(Title_1.default, {
     text: "Welcome in ts project"
@@ -28472,7 +28595,7 @@ exports.App = function () {
     });
   }));
 };
-},{"react":"node_modules/react/index.js","./components/Title":"src/components/Title/index.tsx","./components/Card":"src/components/Card/index.tsx","./data":"src/data/index.tsx"}],"src/styles/index.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../app/Title/Title":"src/app/Title/Title.tsx","../app/ModuleCard/Card":"src/app/ModuleCard/Card.tsx","../data":"src/data/index.tsx"}],"src/globalStyles/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -28522,13 +28645,13 @@ var React = __importStar(require("react"));
 
 var ReactDOM = __importStar(require("react-dom"));
 
-var App_1 = require("./App");
+var CardList_1 = require("./containers/CardList");
 
-require("./styles");
+require("../src/globalStyles");
 
 var ROOT = document.querySelector(".container");
-ReactDOM.render(React.createElement(App_1.App, null), ROOT);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./App":"src/App.tsx","./styles":"src/styles/index.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+ReactDOM.render(React.createElement(CardList_1.CardList, null), ROOT);
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./containers/CardList":"src/containers/CardList.tsx","../src/globalStyles":"src/globalStyles/index.scss"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -28556,7 +28679,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51015" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52509" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
