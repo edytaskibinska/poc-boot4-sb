@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import "./style.scss"
+import "./CardStyle.scss"
 
 
 
@@ -16,6 +16,7 @@ const Card: FC<CardInterface> = ({ title, description, date }) => {
   return (
     <div className="card">
       <h2>{title}</h2>
+      <p>{description}</p>
       <p>{description}</p>
       <sub>{date}</sub>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Title from "./components/Title"
-import Card, { CardInterface } from "./components/Card"
+import Title from "./components/Title/Title"
+import Card, { CardInterface } from "./components/Card/Card"
 
 import data from "./data"
 
