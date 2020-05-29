@@ -3,11 +3,11 @@ import React, { FC } from 'react'
 import Subtitle from '../Subtitle/Subtitle'
 import Description from '../Description/Description'
 import Date from '../Date/Date'
-import Box  from '../Box/Box'
+import Box from '../Box/Box'
 
 
 
-export interface CardInterface {
+export interface CardErrorInterface {
   id?: number;
   key?: number | string;
   title: string;
@@ -16,9 +16,9 @@ export interface CardInterface {
 
 }
 
-const Card: FC<CardInterface> = ({ title, description, date }) => {
+const CardError: FC<CardErrorInterface> = ({ title, description, date }) => {
   return (
-    <Box color="grey">
+    <Box color="red">
       <Subtitle text={title} />
       <Description text={description} />
       <Date date={date} />
@@ -26,4 +26,4 @@ const Card: FC<CardInterface> = ({ title, description, date }) => {
   );
 };
 
-export default Card
+export default CardError

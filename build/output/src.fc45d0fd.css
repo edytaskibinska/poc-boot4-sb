@@ -1,28 +1,32 @@
 h1 {
-  color: pink; }
+  color: white; }
 
 .subtitle {
-  color: pink; }
+  color: #543864;
+  text-decoration: underline; }
 
 .description {
-  color: grey; }
+  color: #543864; }
 
 .date {
   text-align: right;
-  color: teal; }
+  color: #ffbd69; }
 
-.box-grey {
+.box {
   padding: 20px;
   margin: 20px;
-  border-radius: 5px;
-  background-color: grey; }
+  border-radius: 5px; }
+  .box.grey {
+    background-color: #f4f4f4; }
+  .box.red {
+    background-color: #ff6363; }
 
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 1.1rem;
   line-height: 1.3rem;
   color: white;
-  background-color: indigo; }
+  background-color: #202040; }
 
 
 /*# sourceMappingURL=/src.fc45d0fd.css.map */

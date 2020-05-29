@@ -10,7 +10,7 @@ interface DateInterface {
 
 const Date: FC<DateInterface> = ({ date }) => {
     return (
-        <sub>{date}</sub>
+        <sub className="date">{date}</sub>
     );
 };
 export default Date

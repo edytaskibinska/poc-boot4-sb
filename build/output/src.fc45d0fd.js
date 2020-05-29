@@ -28464,16 +28464,18 @@ require("./dateStyle.scss");
 
 var Date = function Date(_a) {
   var date = _a.date;
-  return react_1.default.createElement("sub", null, date);
+  return react_1.default.createElement("sub", {
+    className: "date"
+  }, date);
 };
 
 exports.default = Date;
-},{"react":"node_modules/react/index.js","./dateStyle.scss":"src/app/Date/dateStyle.scss"}],"src/app/BoxGrey/boxGreyStyle.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./dateStyle.scss":"src/app/Date/dateStyle.scss"}],"src/app/Box/boxStyle.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/BoxGrey/BoxGrey.tsx":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/app/Box/Box.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -28488,17 +28490,18 @@ Object.defineProperty(exports, "__esModule", {
 
 var react_1 = __importDefault(require("react"));
 
-require("./boxGreyStyle.scss");
+require("./boxStyle.scss");
 
-var BoxGrey = function BoxGrey(_a) {
-  var children = _a.children;
+var Box = function Box(_a) {
+  var children = _a.children,
+      color = _a.color;
   return react_1.default.createElement("div", {
-    className: "box-grey"
+    className: "box " + color
   }, children);
 };
 
-exports.default = BoxGrey;
-},{"react":"node_modules/react/index.js","./boxGreyStyle.scss":"src/app/BoxGrey/boxGreyStyle.scss"}],"src/app/ModuleCard/Card.tsx":[function(require,module,exports) {
+exports.default = Box;
+},{"react":"node_modules/react/index.js","./boxStyle.scss":"src/app/Box/boxStyle.scss"}],"src/app/ModuleCard/Card.tsx":[function(require,module,exports) {
 "use strict";
 
 var __importDefault = this && this.__importDefault || function (mod) {
@@ -28519,13 +28522,15 @@ var Description_1 = __importDefault(require("../Description/Description"));
 
 var Date_1 = __importDefault(require("../Date/Date"));
 
-var BoxGrey_1 = __importDefault(require("../BoxGrey/BoxGrey"));
+var Box_1 = __importDefault(require("../Box/Box"));
 
 var Card = function Card(_a) {
   var title = _a.title,
       description = _a.description,
       date = _a.date;
-  return react_1.default.createElement(BoxGrey_1.default, null, react_1.default.createElement(Subtitle_1.default, {
+  return react_1.default.createElement(Box_1.default, {
+    color: "grey"
+  }, react_1.default.createElement(Subtitle_1.default, {
     text: title
   }), react_1.default.createElement(Description_1.default, {
     text: description
@@ -28535,7 +28540,46 @@ var Card = function Card(_a) {
 };
 
 exports.default = Card;
-},{"react":"node_modules/react/index.js","../Subtitle/Subtitle":"src/app/Subtitle/Subtitle.tsx","../Description/Description":"src/app/Description/Description.tsx","../Date/Date":"src/app/Date/Date.tsx","../BoxGrey/BoxGrey":"src/app/BoxGrey/BoxGrey.tsx"}],"src/data/index.tsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Subtitle/Subtitle":"src/app/Subtitle/Subtitle.tsx","../Description/Description":"src/app/Description/Description.tsx","../Date/Date":"src/app/Date/Date.tsx","../Box/Box":"src/app/Box/Box.tsx"}],"src/app/ModuleCardError/CardError.tsx":[function(require,module,exports) {
+"use strict";
+
+var __importDefault = this && this.__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var react_1 = __importDefault(require("react"));
+
+var Subtitle_1 = __importDefault(require("../Subtitle/Subtitle"));
+
+var Description_1 = __importDefault(require("../Description/Description"));
+
+var Date_1 = __importDefault(require("../Date/Date"));
+
+var Box_1 = __importDefault(require("../Box/Box"));
+
+var CardError = function CardError(_a) {
+  var title = _a.title,
+      description = _a.description,
+      date = _a.date;
+  return react_1.default.createElement(Box_1.default, {
+    color: "red"
+  }, react_1.default.createElement(Subtitle_1.default, {
+    text: title
+  }), react_1.default.createElement(Description_1.default, {
+    text: description
+  }), react_1.default.createElement(Date_1.default, {
+    date: date
+  }));
+};
+
+exports.default = CardError;
+},{"react":"node_modules/react/index.js","../Subtitle/Subtitle":"src/app/Subtitle/Subtitle.tsx","../Description/Description":"src/app/Description/Description.tsx","../Date/Date":"src/app/Date/Date.tsx","../Box/Box":"src/app/Box/Box.tsx"}],"src/data/index.tsx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28580,12 +28624,18 @@ var Title_1 = __importDefault(require("../app/Title/Title"));
 
 var Card_1 = __importDefault(require("../app/ModuleCard/Card"));
 
+var CardError_1 = __importDefault(require("../app/ModuleCardError/CardError"));
+
 var data_1 = __importDefault(require("../data"));
 
 exports.CardList = function () {
   var products = data_1.default.products;
   return react_1.default.createElement(react_1.default.Fragment, null, react_1.default.createElement(Title_1.default, {
     text: "Welcome in ts project"
+  }), react_1.default.createElement(CardError_1.default, {
+    title: "Error occured",
+    description: "there is an error",
+    date: "12/21/21"
   }), products.map(function (card) {
     return react_1.default.createElement(Card_1.default, {
       key: card.id,
@@ -28595,7 +28645,7 @@ exports.CardList = function () {
     });
   }));
 };
-},{"react":"node_modules/react/index.js","../app/Title/Title":"src/app/Title/Title.tsx","../app/ModuleCard/Card":"src/app/ModuleCard/Card.tsx","../data":"src/data/index.tsx"}],"src/globalStyles/index.scss":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../app/Title/Title":"src/app/Title/Title.tsx","../app/ModuleCard/Card":"src/app/ModuleCard/Card.tsx","../app/ModuleCardError/CardError":"src/app/ModuleCardError/CardError.tsx","../data":"src/data/index.tsx"}],"src/globalStyles/index.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -28679,7 +28729,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52509" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63520" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

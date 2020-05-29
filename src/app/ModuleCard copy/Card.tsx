@@ -22,7 +22,7 @@ const Card: FC<CardInterface> = ({ title, description, date }) => {
       <Subtitle text={title} />
       <Description text={description} />
       <Date date={date} />
-    </Box>
+    </Box >
   );
 };
 
