@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel index.html --out-dir build/output -p 3000",
     "build": "parcel build index.html --out-dir build/production --no-cache",
-    "doc": "bit add src/app/*",
+    "doc": "bit add app/ui-shared/*",
     "export": "bit export upsideodev-ui.juliette-ui",
     "bitreinit": "bit init --reset-hard && bit init"
   },

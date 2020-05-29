@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
-import { CardList } from './containers/CardList'
-import '../src/globalStyles'
+import { CardList } from './modules/CardList'
+import './globalStyles'
 
 
 const ROOT = document.querySelector(".container");

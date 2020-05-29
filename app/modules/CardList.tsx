@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Title from "../app/Title/Title"
-import Card, { CardInterface } from "../app/ModuleCard/Card"
-import CardError  from "../app/ModuleCardError/CardError"
+import Title from "../ui-shared/Title/Title"
+import Card, { CardInterface } from "../ui-business/Card/Card"
+import CardError  from "../ui-business/CardError/CardError"
 
 import data from "../data"
 

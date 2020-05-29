@@ -1,9 +1,9 @@
 import React, { FC } from 'react'
 
-import Subtitle from '../Subtitle/Subtitle'
-import Description from '../Description/Description'
-import Date from '../Date/Date'
-import Box from '../Box/Box'
+import Subtitle from '../../ui-shared/Subtitle/Subtitle'
+import Description from '../../ui-shared/Description/Description'
+import Date from '../../ui-shared/Date/Date'
+import Box from '../../ui-shared/Box/Box'
 
 
 
