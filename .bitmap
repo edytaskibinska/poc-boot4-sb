@@ -32,12 +32,27 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "upsideodev-ui.juliette-business/card@1.0.0": {
+    "upsideodev-ui.juliette-business/card@1.0.1": {
         "files": [
             {
                 "relativePath": "app/ui-business/Card/Card.tsx",
                 "test": false,
                 "name": "Card.tsx"
+            },
+            {
+                "relativePath": "app/ui-business/Card/CardError.tsx",
+                "test": false,
+                "name": "CardError.tsx"
+            },
+            {
+                "relativePath": "app/ui-business/Card/CardList.tsx",
+                "test": false,
+                "name": "CardList.tsx"
+            },
+            {
+                "relativePath": "app/ui-business/Card/index.ts",
+                "test": false,
+                "name": "index.ts"
             }
         ],
         "mainFile": "app/ui-business/Card/Card.tsx",
@@ -96,6 +111,18 @@
         ],
         "mainFile": "app/ui-shared/Description/Description.tsx",
         "trackDir": "app/ui-shared/Description",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "upsideodev-ui.juliette-business/index@1.0.1": {
+        "files": [
+            {
+                "relativePath": "app/data/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "app/data/index.tsx",
         "origin": "AUTHORED",
         "exported": true
     },

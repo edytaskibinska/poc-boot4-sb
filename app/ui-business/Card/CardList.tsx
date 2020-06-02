@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Title from "../ui-shared/Title/Title"
-import Card, { CardInterface } from "../ui-business/Card/Card"
-import CardError  from "../ui-business/CardError/CardError"
+import Title from "../../ui-shared/Title/Title"
+import Card, { CardInterface } from "./Card"
+import CardError  from "./CardError"
 
-import data from "../data"
+import data from "../../data"
 
-export const CardList = () => {
+const CardList = () => {
   const { products } = data
   return (
     <>
@@ -22,3 +22,4 @@ export const CardList = () => {
     </>
   );
 };
+export default CardList
