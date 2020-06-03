@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/EditApp/poc-boot4-sb#readme",
   "dependencies": {
+    "chart.js": "^2.9.3",
     "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
     "typescript": "^3.9.3"
   },
