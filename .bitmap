@@ -86,15 +86,15 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "upsideodev-ui.juliette-business/index@1.0.0": {
+    "upsideodev-ui.juliette-business/global-style@1.0.0": {
         "files": [
             {
-                "relativePath": "app/globalStyles/variables/index.tsx",
+                "relativePath": "app/globalStyles/globalStyle.tsx",
                 "test": false,
-                "name": "index.tsx"
+                "name": "globalStyle.tsx"
             }
         ],
-        "mainFile": "app/globalStyles/variables/index.tsx",
+        "mainFile": "app/globalStyles/globalStyle.tsx",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -149,6 +149,19 @@
         ],
         "mainFile": "app/ui-shared/Title/Title.tsx",
         "trackDir": "app/ui-shared/Title",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "upsideodev-ui.juliette-business/variables@1.0.0": {
+        "files": [
+            {
+                "relativePath": "app/globalStyles/variables/index.tsx",
+                "test": false,
+                "name": "index.tsx"
+            }
+        ],
+        "mainFile": "app/globalStyles/variables/index.tsx",
+        "trackDir": "app/globalStyles/variables",
         "origin": "AUTHORED",
         "exported": true
     },
