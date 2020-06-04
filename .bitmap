@@ -9,9 +9,9 @@
                 "name": "Box.tsx"
             },
             {
-                "relativePath": "app/ui-shared/Box/boxStyle.scss",
+                "relativePath": "app/ui-shared/Box/BoxStyle.tsx",
                 "test": false,
-                "name": "boxStyle.scss"
+                "name": "BoxStyle.tsx"
             }
         ],
         "mainFile": "app/ui-shared/Box/Box.tsx",
@@ -19,44 +19,16 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "upsideodev-ui.juliette-business/card-error@1.0.0": {
+    "upsideodev-ui.juliette-business/charts@1.0.0": {
         "files": [
             {
-                "relativePath": "app/ui-business/CardError/CardError.tsx",
+                "relativePath": "app/ui-shared/Charts/Charts.tsx",
                 "test": false,
-                "name": "CardError.tsx"
+                "name": "Charts.tsx"
             }
         ],
-        "mainFile": "app/ui-business/CardError/CardError.tsx",
-        "trackDir": "app/ui-business/CardError",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "upsideodev-ui.juliette-business/card@1.0.1": {
-        "files": [
-            {
-                "relativePath": "app/ui-business/Card/Card.tsx",
-                "test": false,
-                "name": "Card.tsx"
-            },
-            {
-                "relativePath": "app/ui-business/Card/CardError.tsx",
-                "test": false,
-                "name": "CardError.tsx"
-            },
-            {
-                "relativePath": "app/ui-business/Card/CardList.tsx",
-                "test": false,
-                "name": "CardList.tsx"
-            },
-            {
-                "relativePath": "app/ui-business/Card/index.ts",
-                "test": false,
-                "name": "index.ts"
-            }
-        ],
-        "mainFile": "app/ui-business/Card/Card.tsx",
-        "trackDir": "app/ui-business/Card",
+        "mainFile": "app/ui-shared/Charts/Charts.tsx",
+        "trackDir": "app/ui-shared/Charts",
         "origin": "AUTHORED",
         "exported": true
     },
@@ -86,9 +58,9 @@
                 "name": "Date.tsx"
             },
             {
-                "relativePath": "app/ui-shared/Date/dateStyle.scss",
+                "relativePath": "app/ui-shared/Date/DateStyle.tsx",
                 "test": false,
-                "name": "dateStyle.scss"
+                "name": "DateStyle.tsx"
             }
         ],
         "mainFile": "app/ui-shared/Date/Date.tsx",
@@ -114,15 +86,15 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "upsideodev-ui.juliette-business/index@1.0.1": {
+    "upsideodev-ui.juliette-business/index@1.0.0": {
         "files": [
             {
-                "relativePath": "app/data/index.tsx",
+                "relativePath": "app/globalStyles/variables/index.tsx",
                 "test": false,
                 "name": "index.tsx"
             }
         ],
-        "mainFile": "app/data/index.tsx",
+        "mainFile": "app/globalStyles/variables/index.tsx",
         "origin": "AUTHORED",
         "exported": true
     },

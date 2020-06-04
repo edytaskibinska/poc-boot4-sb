@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import "./dateStyle.scss"
+import DateStyled from "./DateStyle"
 
 
 
@@ -10,7 +10,7 @@ interface DateInterface {
 
 const Date: FC<DateInterface> = ({ date }) => {
     return (
-        <sub className="date">{date}</sub>
+        <DateStyled className="date">{date}</DateStyled>
     );
 };
 export default Date

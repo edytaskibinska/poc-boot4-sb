@@ -25,10 +25,6 @@ const initialState: any = {
 const Charts: FC<any> = () => {
     return (
         <>
-            <Bar
-                data={initialState.data}
-                options={{ maintainAspectRatio: false }}
-            />
             <Pie data={initialState.data} />
             <Line data={initialState.data} />
             <Doughnut data={initialState.data} />

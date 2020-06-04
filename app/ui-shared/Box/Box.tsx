@@ -1,6 +1,6 @@
 import React, { FC, ReactNode } from 'react'
-import "./boxStyle.scss"
 
+import { BoxStyled } from "./BoxStyle"
 
 
 interface BoxInterface {
@@ -11,7 +11,7 @@ interface BoxInterface {
 
 const Box: FC<BoxInterface> = ({ children, color }) => {
     return (
-        <div className={`box ${color}`}>{children}</div>
+        <BoxStyled className={`${color}`}>{children}</BoxStyled>
     );
 };
 export default Box
